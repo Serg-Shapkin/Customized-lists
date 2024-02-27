@@ -1,7 +1,5 @@
 package customArrayList;
 
-import java.util.Arrays;
-
 /**
  * Класс кастомной реализации ArrayList с полями array, size и capacity
  * @param <T> объект любого типа
@@ -85,7 +83,7 @@ public class CustomArrayList<T> {
     }
 
     /**
-     * Метод для удаления элемента по ключу
+     * Метод для удаления элемента по значению
      * @param elem элемент, который необходимо удалить
      */
     public void remove(T elem) {

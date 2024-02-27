@@ -4,18 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f9f0752e-474d-4cb6-ac11-bca0e7e12b4b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Customized-lists.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/customArrayList/CustomArrayList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/customArrayList/RunArrayList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/customLinkedList/CustomLinkedList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/customLinkedList/RunLinkedList.java" afterDir="false" />
+    <list default="true" id="f9f0752e-474d-4cb6-ac11-bca0e7e12b4b" name="Changes" comment="Реализация ArrayList и LinkedList">
+      <change afterPath="$PROJECT_DIR$/src/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/customArrayList/CustomArrayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/customArrayList/CustomArrayList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/customLinkedList/CustomLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/customLinkedList/CustomLinkedList.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,16 +37,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Java/Projects/intellekta/intellekta&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "D:/Java/Projects/practicum/gitHub/java-sprint1-hw",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Application.RunArrayList">
     <configuration name="RunArrayList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="customArrayList.RunArrayList" />
@@ -91,6 +84,14 @@
       <option name="presentableId" value="Default" />
       <updated>1709017930619</updated>
     </task>
+    <task id="LOCAL-00001" summary="Реализация ArrayList и LinkedList">
+      <created>1709065949068</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1709065949068</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -106,5 +107,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Реализация ArrayList и LinkedList" />
+    <option name="LAST_COMMIT_MESSAGE" value="Реализация ArrayList и LinkedList" />
   </component>
 </project>
