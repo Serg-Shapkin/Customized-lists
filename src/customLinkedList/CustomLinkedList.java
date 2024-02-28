@@ -1,5 +1,7 @@
 package customLinkedList;
 
+import interfaces.CustomListAll;
+
 import java.util.Arrays;
 import java.util.NoSuchElementException;
 
@@ -9,7 +11,7 @@ import java.util.NoSuchElementException;
  * @author Сергей Шапкин
  * @version 1.0
  */
-public class CustomLinkedList<T> {
+public class CustomLinkedList<T> implements CustomListAll<T> {
     /** Указатель на первый элемент списка*/
     private Node<T> head;
 
@@ -40,6 +42,7 @@ public class CustomLinkedList<T> {
      * Метод для добавления элемента в конец коллекции
      * @param elem элемент, который необходимо добавить
      */
+    @Override
     public void add(T elem) {
         Node<T> node = new Node<>(elem);
         if (isEmpty()) {
@@ -57,6 +60,7 @@ public class CustomLinkedList<T> {
      * Метод для добавления элемента в начало коллекции
      * @param elem элемент, который необходимо добавить
      */
+    @Override
     public void addFirst(T elem) {
         Node<T> node = new Node<>(elem);
         if (isEmpty()) {
@@ -75,6 +79,7 @@ public class CustomLinkedList<T> {
      * @param elem элемент, который необходимо добавить
      * @param index индекс, на место которого необходимо вставить элемент
      */
+    @Override
     public void add(int index, T elem) {
         Node<T> current = head;
         int indexSearch = 0; // дополнительная переменная, служит для нахождения индекса
@@ -93,31 +98,12 @@ public class CustomLinkedList<T> {
         size++;
     }
 
-    /** Метод для получения первого элемента из коллекции
-     * @return возвращает первый элемент из коллекции
-     */
-    public T getFirst() {
-        Node<T> current = head;
-        if (current == null)
-            throw new NoSuchElementException();
-        return head.elem;
-    }
-
-    /** Метод для получения последнего элемента из коллекции
-     * @return возвращает последний элемент из коллекции
-     */
-    public T getLast() {
-        Node<T> current = tail;
-        if (current == null)
-            throw new NoSuchElementException();
-        return tail.elem;
-    }
-
     /**
      * Метод для получения элемента из по индексу
      * @param index индекс элемента, который необходимо получить
      * @return возвращает элемент по запрашиваемому индексу
      */
+    @Override
     public T get(int index) {
         checkIndex(index);
 
@@ -128,36 +114,43 @@ public class CustomLinkedList<T> {
         return current.elem;
     }
 
-    /**
-     * Метод для удаления первого элемента из коллекции
+    /** Метод для получения первого элемента из коллекции
+     * @return возвращает первый элемент из коллекции
      */
-    public void removeFirst() {
-        if (head.next == null) {
-            tail = null;
-        } else {
-            head.next.prev = null;
-        }
-        head = head.next;
-        size--;
+    @Override
+    public T getFirst() {
+        Node<T> current = head;
+        if (current == null)
+            throw new NoSuchElementException();
+        return head.elem;
+    }
+
+    /** Метод для получения последнего элемента из коллекции
+     * @return возвращает последний элемент из коллекции
+     */
+    @Override
+    public T getLast() {
+        Node<T> current = tail;
+        if (current == null)
+            throw new NoSuchElementException();
+        return tail.elem;
     }
 
     /**
-     * Метод для удаления последнего элемента из коллекции
+     * Метод для удаления элемента по индексу
+     * @param index индекс элемента, который необходимо удалить
      */
-    public void removeLast() {
-        if (head.next == null) {
-            head = null;
-        } else {
-            tail.prev.next = null;
-        }
-        tail = tail.prev;
-        size--;
+    @Override
+    public void remove(int index) {
+        T elem = get(index);
+        remove(elem);
     }
 
     /**
      * Метод для удаления элемента по значению
      * @param elem элемент, который необходимо удалить
      */
+    @Override
     public void remove(T elem) {
         Node<T> current = head;
         while (!current.elem.equals(elem)) {
@@ -183,11 +176,40 @@ public class CustomLinkedList<T> {
     }
 
     /**
+     * Метод для удаления первого элемента из коллекции
+     */
+    @Override
+    public void removeFirst() {
+        if (head.next == null) {
+            tail = null;
+        } else {
+            head.next.prev = null;
+        }
+        head = head.next;
+        size--;
+    }
+
+    /**
+     * Метод для удаления последнего элемента из коллекции
+     */
+    @Override
+    public void removeLast() {
+        if (head.next == null) {
+            head = null;
+        } else {
+            tail.prev.next = null;
+        }
+        tail = tail.prev;
+        size--;
+    }
+
+    /**
      * Метод для сортировки коллекции
      * Внутри метода создается новый массив в который копируются все элементы CustomLinkedList
      * После производится сортировка с помощью Arrays.sort() и очистка текущего CustomLinkedList
      * Далее все элементы копируются из отсортированного массива в новый CustomLinkedList
      */
+    @Override
     public void sort() {
         T[] array = (T[]) new Object[size];
         Node<T> node = head;
@@ -209,6 +231,7 @@ public class CustomLinkedList<T> {
     /**
      * Метод для очистки всей коллекции
      */
+    @Override
     public void clear() {
         for (Node<T> i = head; i != null; ) {
             Node<T> next = i.next;
@@ -225,6 +248,7 @@ public class CustomLinkedList<T> {
      * Метод для получения размера коллекции
      * @return возвращает размер коллекции
      */
+    @Override
     public int size() {
         return this.size;
     }

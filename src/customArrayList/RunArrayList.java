@@ -1,8 +1,10 @@
 package customArrayList;
 
+import interfaces.CustomList;
+
 public class RunArrayList {
     public static void main(String[] args) {
-        CustomArrayList<Integer> arrayList = new CustomArrayList<>(20);
+        CustomList<Integer> arrayList = new CustomArrayList<>(2);
         arrayList.add(1);
         arrayList.add(2);
         arrayList.add(3);

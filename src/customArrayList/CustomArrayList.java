@@ -1,5 +1,7 @@
 package customArrayList;
 
+import interfaces.CustomList;
+
 import java.util.Arrays;
 
 /**
@@ -8,7 +10,7 @@ import java.util.Arrays;
  * @author Сергей Шапкин
  * @version 1.0
  */
-public class CustomArrayList<T> {
+public class CustomArrayList<T> implements CustomList<T> {
     /** Массив типа Т */
     private T[] array;
 
@@ -42,6 +44,7 @@ public class CustomArrayList<T> {
      * Метод для добавления элемента в коллекцию
      * @param elem элемент, который необходимо добавить
      */
+    @Override
     public void add(T elem) {
         if (size == capacity) {
             resize();
@@ -54,6 +57,7 @@ public class CustomArrayList<T> {
      * @param index место в коллекции, на которое необходимо поместить элемент
      * @param elem элемент, который необходимо добавить
      */
+    @Override
     public void add(int index, T elem) {
         if (size == capacity) {
             resize();
@@ -75,6 +79,7 @@ public class CustomArrayList<T> {
      * @param index индекс элемента, который необходимо получить
      * @return возвращает элемент по запрашиваемому индексу
      */
+    @Override
     public T get(int index) {
         checkIndex(index);
         return (T) array[index];
@@ -84,6 +89,7 @@ public class CustomArrayList<T> {
      * Метод для удаления элемента по индексу
      * @param index индекс элемента, который необходимо удалить
      */
+    @Override
     public void remove(int index) {
         checkIndex(index);
         for (int i = index; i < size; i++) {
@@ -96,6 +102,7 @@ public class CustomArrayList<T> {
      * Метод для удаления элемента по значению
      * @param elem элемент, который необходимо удалить
      */
+    @Override
     public void remove(T elem) {
         int index = getIndex(elem);
         if (index < 0) {
@@ -110,6 +117,7 @@ public class CustomArrayList<T> {
      * Если размер массива меньше вместимости, то вызывается приватный метод для обрезки массива
      * После производится сортировка с помощью Arrays.sort()
      */
+    @Override
     public void sort() {
         if (size < capacity) {
             trimToSize();
@@ -120,6 +128,7 @@ public class CustomArrayList<T> {
     /**
      * Метод для очистки всей коллекции
      */
+    @Override
     public void clear() {
         for (int i = 0; i < array.length; i++) {
             array[i] = null;
@@ -131,6 +140,7 @@ public class CustomArrayList<T> {
      * Метод для получения размера коллекции
      * @return возвращает размер коллекции
      */
+    @Override
     public int size() {
         return this.size;
     }
