@@ -4,11 +4,68 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f9f0752e-474d-4cb6-ac11-bca0e7e12b4b" name="Changes" comment="Реализация ArrayList и LinkedList">
-      <change afterPath="$PROJECT_DIR$/src/README.md" afterDir="false" />
+    <list default="true" id="f9f0752e-474d-4cb6-ac11-bca0e7e12b4b" name="Changes" comment="Добавил README.md">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/customArrayList/CustomArrayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/customArrayList/CustomArrayList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/customLinkedList/CustomLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/customLinkedList/CustomLinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/customArrayList/RunArrayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/customArrayList/RunArrayList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/javadoc/allclasses-index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/javadoc/allpackages-index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/javadoc/customArrayList/CustomArrayList.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/javadoc/customArrayList/RunArrayList.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/javadoc/customArrayList/class-use/CustomArrayList.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/javadoc/customArrayList/class-use/RunArrayList.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/javadoc/customArrayList/package-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/javadoc/customArrayList/package-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/javadoc/customArrayList/package-use.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/javadoc/customLinkedList/CustomLinkedList.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/javadoc/customLinkedList/RunLinkedList.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/javadoc/customLinkedList/class-use/CustomLinkedList.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/javadoc/customLinkedList/class-use/RunLinkedList.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/javadoc/customLinkedList/package-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/javadoc/customLinkedList/package-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/javadoc/customLinkedList/package-use.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/javadoc/element-list" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/javadoc/help-doc.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/javadoc/index-files/index-1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/javadoc/index-files/index-2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/javadoc/index-files/index-3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/javadoc/index-files/index-4.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/javadoc/index-files/index-5.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/javadoc/index-files/index-6.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/javadoc/index-files/index-7.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/javadoc/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/javadoc/jquery-ui.overrides.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/javadoc/legal/COPYRIGHT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/javadoc/legal/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/javadoc/legal/jquery.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/javadoc/legal/jqueryUI.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/javadoc/member-search-index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/javadoc/module-search-index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/javadoc/overview-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/javadoc/overview-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/javadoc/package-search-index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/javadoc/resources/glass.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/javadoc/resources/x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/javadoc/script-dir/images/ui-bg_glass_55_fbf9ee_1x400.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/javadoc/script-dir/images/ui-bg_glass_65_dadada_1x400.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/javadoc/script-dir/images/ui-bg_glass_75_dadada_1x400.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/javadoc/script-dir/images/ui-bg_glass_75_e6e6e6_1x400.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/javadoc/script-dir/images/ui-bg_glass_95_fef1ec_1x400.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/javadoc/script-dir/images/ui-bg_highlight-soft_75_cccccc_1x100.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/javadoc/script-dir/images/ui-icons_222222_256x240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/javadoc/script-dir/images/ui-icons_2e83ff_256x240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/javadoc/script-dir/images/ui-icons_454545_256x240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/javadoc/script-dir/images/ui-icons_888888_256x240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/javadoc/script-dir/images/ui-icons_cd0a0a_256x240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/javadoc/script-dir/jquery-3.5.1.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/javadoc/script-dir/jquery-ui.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/javadoc/script-dir/jquery-ui.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/javadoc/script-dir/jquery-ui.structure.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/javadoc/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/javadoc/search.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/javadoc/stylesheet.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/javadoc/tag-search-index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/javadoc/type-search-index.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +148,14 @@
       <option name="project" value="LOCAL" />
       <updated>1709065949068</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Добавил README.md">
+      <created>1709066998622</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1709066998622</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -108,6 +172,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Реализация ArrayList и LinkedList" />
-    <option name="LAST_COMMIT_MESSAGE" value="Реализация ArrayList и LinkedList" />
+    <MESSAGE value="Добавил README.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавил README.md" />
   </component>
 </project>

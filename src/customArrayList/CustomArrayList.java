@@ -1,5 +1,7 @@
 package customArrayList;
 
+import java.util.Arrays;
+
 /**
  * Класс кастомной реализации ArrayList с полями array, size и capacity
  * @param <T> объект любого типа
@@ -53,9 +55,17 @@ public class CustomArrayList<T> {
      * @param elem элемент, который необходимо добавить
      */
     public void add(int index, T elem) {
+        if (size == capacity) {
+            resize();
+        }
+
+        if (index > size) {
+            throw new IndexOutOfBoundsException("It is not possible to add an element. Index: " + index + ", Size: " + size);
+        }
         for (int i = size; i > index ; i--) {
             array[i] = array[i - 1];
         }
+
         array[index] = elem;
         size++;
     }
@@ -96,6 +106,16 @@ public class CustomArrayList<T> {
     }
 
     /**
+     * Метод для сортировки массива
+     */
+    public void sort() {
+        if (size < capacity) {
+            trimToSize();
+        }
+        Arrays.sort(array);
+    }
+
+    /**
      * Метод для очистки всей коллекции
      */
     public void clear() {
@@ -122,6 +142,7 @@ public class CustomArrayList<T> {
         }
         array = newArray;
         capacity = newCapacity;
+        System.out.println("Capacity increased to " + newCapacity + " cells");
     }
 
     private int getIndex(T elem) {
@@ -141,6 +162,17 @@ public class CustomArrayList<T> {
         if (index > capacity - 1) {
             throw new IndexOutOfBoundsException("The index of the element does not exist");
         }
+    }
+
+    private void trimToSize() {
+        int newCapacity = size;
+        T[] newArray = (T[]) new Object[newCapacity];
+
+        for (int i = 0; i < newCapacity; i++) {
+            newArray[i] = array[i];
+        }
+        array = newArray;
+        capacity = newCapacity;
     }
 
     /**
