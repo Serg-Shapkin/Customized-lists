@@ -1,5 +1,6 @@
 package customLinkedList;
 
+import java.util.Arrays;
 import java.util.NoSuchElementException;
 
 /**
@@ -75,14 +76,16 @@ public class CustomLinkedList<T> {
      * @param index индекс, на место которого необходимо вставить элемент
      */
     public void addByIndex(T elem, int index) {
-        Node<T> current = head; // промежуточная переменная
+        Node<T> current = head;
         int indexSearch = 0; // дополнительная переменная, служит для нахождения индекса
 
         while (current != null && indexSearch != index) {
             current = current.next;
             indexSearch++;
         }
+
         Node<T> node = new Node<>(elem);
+
         current.prev.next = node;
         node.prev = current.prev;
         current.prev = node;
@@ -176,6 +179,31 @@ public class CustomLinkedList<T> {
         } else {
             current.next.prev = current.prev;
         }
+        size--;
+    }
+
+    /**
+     * Метод для сортировки коллекции
+     * Внутри метода создается новый массив в который копируются все элементы CustomLinkedList
+     * После производится сортировка с помощью Arrays.sort() и очистка текущего CustomLinkedList
+     * Далее все элементы копируются из отсортированного массива в новый CustomLinkedList
+     */
+    public void sort() {
+        T[] array = (T[]) new Object[size];
+        Node<T> node = head;
+
+        for (int i = 0; i < size; i++) {
+            array[i] = node.elem;
+            node = node.next;
+        }
+
+        Arrays.sort(array);
+
+        clear();
+
+        for (int i = 0; i < array.length; i++) {
+            addLast(array[i]);
+        }
     }
 
     /**
@@ -218,12 +246,17 @@ public class CustomLinkedList<T> {
     @Override
     public String toString() {
         StringBuilder elements = new StringBuilder();
-        Node node = head;
+        Node<T> node = head;
 
         while (node != null) {
-            elements.append(node.elem).append(" ");
+            elements.append(node.elem).append(", ");
             node = node.next;
         }
-        return "CustomLinkedList: [" + elements.substring(0, elements.length()) + "]";
+
+        if (elements.length() > 2) {
+            return "CustomLinkedList: [" + elements.substring(0, elements.length() - 2) + "]";
+        } else {
+            return "CustomLinkedList: [" + elements.substring(0, elements.length()) + "]";
+        }
     }
 }

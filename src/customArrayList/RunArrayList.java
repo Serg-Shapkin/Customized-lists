@@ -1,8 +1,5 @@
 package customArrayList;
 
-import java.util.ArrayList;
-import java.util.List;
-
 /**
  * Класс RunArrayList - класс для проверки функциональности CustomArrayList
  */
@@ -66,14 +63,5 @@ public class RunArrayList {
         arrayList.clear();
         System.out.println(arrayList);
         System.out.println("Размер списка: " + arrayList.size());
-
-
-
-        /*List<Integer> list = new ArrayList<>(10);
-        list.add(1);
-        list.add(5);
-
-        list.add(3, 10);
-        System.out.println(list);*/
     }
 }

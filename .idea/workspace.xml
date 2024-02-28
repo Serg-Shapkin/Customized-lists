@@ -4,10 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f9f0752e-474d-4cb6-ac11-bca0e7e12b4b" name="Changes" comment="Добавил README.md">
+    <list default="true" id="f9f0752e-474d-4cb6-ac11-bca0e7e12b4b" name="Changes" comment="1. Доработал метод добавления элемента по индексу в классе CustomArrayList. Теперь невозможно добавить, например, по индексу 5 если в 4 ячейке массива null.&#10;2. Добавил приватные метод trimToSize, для обрезки внутреннего массива перед сортировкой.&#10;3. Добавил метод для сортировки массива">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/customArrayList/CustomArrayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/customArrayList/CustomArrayList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/customArrayList/RunArrayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/customArrayList/RunArrayList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/customLinkedList/CustomLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/customLinkedList/CustomLinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/customLinkedList/RunLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/customLinkedList/RunLinkedList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/javadoc/allclasses-index.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/javadoc/allpackages-index.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/javadoc/customArrayList/CustomArrayList.html" beforeDir="false" />
@@ -104,7 +107,7 @@
     "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.RunArrayList">
+  <component name="RunManager" selected="Application.RunLinkedList">
     <configuration name="RunArrayList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="customArrayList.RunArrayList" />
       <module name="Customized-lists" />
@@ -127,8 +130,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.RunArrayList" />
         <item itemvalue="Application.RunLinkedList" />
+        <item itemvalue="Application.RunArrayList" />
       </list>
     </recent_temporary>
   </component>
@@ -155,7 +158,14 @@
       <option name="project" value="LOCAL" />
       <updated>1709066998622</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="1. Доработал метод добавления элемента по индексу в классе CustomArrayList. Теперь невозможно добавить, например, по индексу 5 если в 4 ячейке массива null.&#10;2. Добавил приватные метод trimToSize, для обрезки внутреннего массива перед сортировкой.&#10;3. Добавил метод для сортировки массива">
+      <created>1709124132697</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1709124132697</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -173,6 +183,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Реализация ArrayList и LinkedList" />
     <MESSAGE value="Добавил README.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавил README.md" />
+    <MESSAGE value="1. Доработал метод добавления элемента по индексу в классе CustomArrayList. Теперь невозможно добавить, например, по индексу 5 если в 4 ячейке массива null.&#10;2. Добавил приватные метод trimToSize, для обрезки внутреннего массива перед сортировкой.&#10;3. Добавил метод для сортировки массива" />
+    <option name="LAST_COMMIT_MESSAGE" value="1. Доработал метод добавления элемента по индексу в классе CustomArrayList. Теперь невозможно добавить, например, по индексу 5 если в 4 ячейке массива null.&#10;2. Добавил приватные метод trimToSize, для обрезки внутреннего массива перед сортировкой.&#10;3. Добавил метод для сортировки массива" />
   </component>
 </project>
