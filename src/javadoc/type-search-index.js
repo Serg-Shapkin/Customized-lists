@@ -1,1 +1,0 @@
-typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"customArrayList","l":"CustomArrayList"},{"p":"customLinkedList","l":"CustomLinkedList"},{"p":"customArrayList","l":"RunArrayList"},{"p":"customLinkedList","l":"RunLinkedList"}];updateSearchResults();

@@ -1,13 +1,6 @@
 package customLinkedList;
 
-/**
- * Класс Main - класс для проверки функциональности CustomLinkedList
- */
 public class RunLinkedList {
-    /**
-     * Метод main - точка входа в программу
-     * @param args - аргументы командной строки
-     */
     public static void main(String[] args) {
         CustomLinkedList<Integer> linkedList = new CustomLinkedList<>();
         linkedList.addFirst(1);

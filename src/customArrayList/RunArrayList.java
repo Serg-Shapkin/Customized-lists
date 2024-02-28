@@ -1,13 +1,6 @@
 package customArrayList;
 
-/**
- * Класс RunArrayList - класс для проверки функциональности CustomArrayList
- */
 public class RunArrayList {
-    /**
-     * Метод main - точка входа в программу
-     * @param args - аргументы командной строки
-     */
     public static void main(String[] args) {
         CustomArrayList<Integer> arrayList = new CustomArrayList<>(2);
         arrayList.add(1);
