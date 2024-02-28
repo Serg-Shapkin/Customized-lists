@@ -2,7 +2,7 @@ package customArrayList;
 
 public class RunArrayList {
     public static void main(String[] args) {
-        CustomArrayList<Integer> arrayList = new CustomArrayList<>(2);
+        CustomArrayList<Integer> arrayList = new CustomArrayList<>(20);
         arrayList.add(1);
         arrayList.add(2);
         arrayList.add(3);

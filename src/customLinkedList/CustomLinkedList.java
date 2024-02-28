@@ -37,6 +37,23 @@ public class CustomLinkedList<T> {
     }
 
     /**
+     * Метод для добавления элемента в конец коллекции
+     * @param elem элемент, который необходимо добавить
+     */
+    public void add(T elem) {
+        Node<T> node = new Node<>(elem);
+        if (isEmpty()) {
+            head = node;
+        } else {
+            tail.next = node;
+        }
+
+        node.prev = tail;
+        tail = node;
+        size++;
+    }
+
+    /**
      * Метод для добавления элемента в начало коллекции
      * @param elem элемент, который необходимо добавить
      */
@@ -54,28 +71,11 @@ public class CustomLinkedList<T> {
     }
 
     /**
-     * Метод для добавления элемента в конец коллекции
-     * @param elem элемент, который необходимо добавить
-     */
-    public void addLast(T elem) {
-        Node<T> node = new Node<>(elem);
-        if (isEmpty()) {
-            head = node;
-        } else {
-            tail.next = node;
-        }
-
-        node.prev = tail;
-        tail = node;
-        size++;
-    }
-
-    /**
      * Метод для добавления элемента по индексу
      * @param elem элемент, который необходимо добавить
      * @param index индекс, на место которого необходимо вставить элемент
      */
-    public void addByIndex(T elem, int index) {
+    public void add(int index, T elem) {
         Node<T> current = head;
         int indexSearch = 0; // дополнительная переменная, служит для нахождения индекса
 
@@ -202,7 +202,7 @@ public class CustomLinkedList<T> {
         clear();
 
         for (int i = 0; i < array.length; i++) {
-            addLast(array[i]);
+            add(array[i]);
         }
     }
 

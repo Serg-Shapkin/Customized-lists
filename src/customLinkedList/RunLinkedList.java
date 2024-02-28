@@ -11,9 +11,9 @@ public class RunLinkedList {
         System.out.println(linkedList);
         System.out.println("Размер списка: " + linkedList.size());
 
-        linkedList.addLast(4);
-        linkedList.addLast(8);
-        linkedList.addLast(6);
+        linkedList.add(4);
+        linkedList.add(8);
+        linkedList.add(6);
 
         System.out.println("\nСписок после добавления элементов в конец:");
         System.out.println(linkedList);
@@ -26,7 +26,7 @@ public class RunLinkedList {
         System.out.println("Последний элемент: " + linkedList.getLast());
 
         System.out.println("\nСписок после добавления элемента 10 по индексу 1:");
-        linkedList.addByIndex(10, 1);
+        linkedList.add(1, 10);
         System.out.println(linkedList);
         System.out.println("Размер списка: " + linkedList.size());
 

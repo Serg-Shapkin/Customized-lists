@@ -161,8 +161,8 @@ public class CustomArrayList<T> {
     }
 
     private void checkIndex(int index) {
-        if (index > capacity - 1) {
-            throw new IndexOutOfBoundsException("The index of the element does not exist");
+        if (index > capacity - 1 || index > size - 1) {
+            throw new IndexOutOfBoundsException("Invalid element index. Size: " + size + " Index: " + index);
         }
     }
 
@@ -185,9 +185,15 @@ public class CustomArrayList<T> {
     public String toString() {
         StringBuilder elements = new StringBuilder();
         for (T elem : array) {
-            elements.append(elem).append(", ");
+            if (elem != null) {
+                elements.append(elem).append(", ");
+            }
         }
-        return "CustomArrayList: [" +
-                elements.substring(0, elements.length() - 2) + "]";
+
+        if (elements.length() > 2) {
+            return "CustomArrayList: [" + elements.substring(0, elements.length() - 2) + "]";
+        } else {
+            return "CustomArrayList: [" + elements.substring(0, elements.length()) + "]";
+        }
     }
 }
