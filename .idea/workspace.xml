@@ -4,14 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f9f0752e-474d-4cb6-ac11-bca0e7e12b4b" name="Changes" comment="README.md">
-      <change afterPath="$PROJECT_DIR$/src/interfaces/CustomList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/interfaces/CustomListAll.java" afterDir="false" />
+    <list default="true" id="f9f0752e-474d-4cb6-ac11-bca0e7e12b4b" name="Changes" comment="1. Добавил интерфейсы&#10;2. Реализовал метод remove(int index) в классе CustomLinkedList&#10;3. Небольшие изменения в организации кода">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/customArrayList/CustomArrayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/customArrayList/CustomArrayList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/customArrayList/RunArrayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/customArrayList/RunArrayList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/customLinkedList/CustomLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/customLinkedList/CustomLinkedList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/customLinkedList/RunLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/customLinkedList/RunLinkedList.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -176,7 +170,14 @@
       <option name="project" value="LOCAL" />
       <updated>1709142149574</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="1. Добавил интерфейсы&#10;2. Реализовал метод remove(int index) в классе CustomLinkedList&#10;3. Небольшие изменения в организации кода">
+      <created>1709153002728</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1709153002728</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -201,6 +202,7 @@
     <MESSAGE value="Добавил .idea в gitignore&#10;Добавил javadoc в gitignore" />
     <MESSAGE value="1. В классе CustomArrayList добавил логику в метод toString, теперь не выводятся null&#10;2. Добавил проверку в приватный метод checkIndex в CustomArrayList&#10;3. Остальные незначительные правки согласно комментариям" />
     <MESSAGE value="README.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="README.md" />
+    <MESSAGE value="1. Добавил интерфейсы&#10;2. Реализовал метод remove(int index) в классе CustomLinkedList&#10;3. Небольшие изменения в организации кода" />
+    <option name="LAST_COMMIT_MESSAGE" value="1. Добавил интерфейсы&#10;2. Реализовал метод remove(int index) в классе CustomLinkedList&#10;3. Небольшие изменения в организации кода" />
   </component>
 </project>

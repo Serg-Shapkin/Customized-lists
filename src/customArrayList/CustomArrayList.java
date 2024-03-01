@@ -23,6 +23,7 @@ public class CustomArrayList<T> implements CustomList<T> {
     /**
      * Конструктор - создание нового объекта CustomArrayList с определенным значением capacity
      * @param capacity вместимость массива
+     * @throws IllegalArgumentException если размер будущего CustomArrayList <= 0
      */
     public CustomArrayList(int capacity) {
         if (capacity <= 0) {
@@ -56,6 +57,7 @@ public class CustomArrayList<T> implements CustomList<T> {
      * Метод для добавления элемента в коллекцию по индексу
      * @param index место в коллекции, на которое необходимо поместить элемент
      * @param elem элемент, который необходимо добавить
+     * @throws IndexOutOfBoundsException если индекс элемента больше размера списка
      */
     @Override
     public void add(int index, T elem) {
@@ -101,6 +103,7 @@ public class CustomArrayList<T> implements CustomList<T> {
     /**
      * Метод для удаления элемента по значению
      * @param elem элемент, который необходимо удалить
+     * @throws IndexOutOfBoundsException если индекс элемента не был найден
      */
     @Override
     public void remove(T elem) {

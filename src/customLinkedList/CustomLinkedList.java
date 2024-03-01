@@ -116,6 +116,7 @@ public class CustomLinkedList<T> implements CustomListAll<T> {
 
     /** Метод для получения первого элемента из коллекции
      * @return возвращает первый элемент из коллекции
+     * @throws NoSuchElementException если текущий элемент null
      */
     @Override
     public T getFirst() {
@@ -127,6 +128,7 @@ public class CustomLinkedList<T> implements CustomListAll<T> {
 
     /** Метод для получения последнего элемента из коллекции
      * @return возвращает последний элемент из коллекции
+     * @throws NoSuchElementException если текущий элемент null
      */
     @Override
     public T getLast() {
